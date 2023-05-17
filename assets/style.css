@@ -65,7 +65,7 @@ header {
   display: inline;
 }
 
-.main-body section div p {
+p {
   display: flex;
   font-size: 150%;
 }
@@ -85,21 +85,34 @@ div {
 #top-card {
   display: flex;
   border: dotted yellowgreen 2px;
-  width: 80%;
+  width: 82%;
+  background-image: url("./images/lorem-photo.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .card {
   border: dotted green 2px;
+  margin: 1%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   width: 40%;
+  height: 200px;
 }
 
-.card-description {
-  font-size: 150%; /*WHY IS THIS NOT WORKING???????*/
+figure p {
+  font-size: 100%;
 }
 
 figure {
   border: solid orange 1px;
+  background-color: transparent;
+}
+
+figure h3,
+figure p {
+  background-color: transparent;
+  /* This creates a text shadow surrounding each letter to make card text visible against any picture background */
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
