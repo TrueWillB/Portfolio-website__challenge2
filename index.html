@@ -9,8 +9,8 @@
   </head>
   <body>
     <header>
-      <h1>Welcome to Will</h1>
-      <nav>
+      <h1 class="main-title-bar">Welcome to Will</h1>
+      <nav class="main-navbar">
         <div>About me</div>
         <div>Work</div>
         <div>Resume</div>
@@ -23,28 +23,80 @@
       </section>
       <content class="main-body">
         <section>
-          <h2>About Me</h2>
+          <div class="section-title-holder">
+            <h2>About Me</h2>
+          </div>
           <div>
             <p>
-              Here's a bunch of stuff about me: Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Veniam, debitis.
+              Here's a bunch of stuff about me: Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. Doloremque eligendi magnam aliquam
+              fugiat, voluptatem sequi, ratione modi maxime pariatur itaque
+              corrupti, asperiores ad beatae ullam inventore at accusantium
+              dignissimos nihil!
             </p>
-            <p>Another bit goes right here too</p>
+            <p>
+              Another bit goes right here too: Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Praesentium voluptatibus tempora
+              accusantium nulla ipsam est aperiam sed officiis quia rerum.
+            </p>
           </div>
         </section>
         <section>
-          <h2>Work</h2>
+          <div class="section-title-holder">
+            <h2>Work</h2>
+          </div>
+          <!-- Doing NOTHING except changing the tag below from a seciton to a div totally changed the behavior. WHYYYYY? -->
+          <section class="project-card-holder">
+            <div class="card" id="top-card">
+              <figure>
+                <h3>lorem project</h3>
+                <p class="card-description">Lorem ipsum dolor sit amet.</p>
+              </figure>
+            </div>
+            <div class="card">
+              <figure>
+                <h3>ipsum project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </figure>
+            </div>
+            <div class="card">
+              <figure>
+                <h3>dolor project</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+              </figure>
+            </div>
+            <div class="card">
+              <figure>
+                <h3>sit project</h3>
+                <p>Lorem ipsum dolor sit.</p>
+              </figure>
+            </div>
+            <div class="card">
+              <figure>
+                <h3>placeholder project</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, consequatur.
+                </p>
+              </figure>
+            </div>
+          </section>
+        </section>
+        <section>
+          <div class="section-title-holder">
+            <h2>Resume</h2>
+          </div>
           <div>
-            <p>Here's some work I did</p>
+            <p>omg here's my resume: COOL LINK</p>
           </div>
         </section>
         <section>
-          <h2>Resume</h2>
-          <p>omg here's my resume: COOL LINK</p>
-        </section>
-        <section>
-          <h2>Contact Me</h2>
-          <p>here's where my contact info goes</p>
+          <div class="section-title-holder">
+            <h2>Contact Me</h2>
+          </div>
+          <div>
+            <p>here's where my contact info goes</p>
+          </div>
         </section>
       </content>
     </main>

@@ -1,5 +1,105 @@
+:root {
+  --main-background-color: rgb(50, 50, 50);
+  --title-color: darkblue;
+  --main-text-color: white;
+}
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: white;
-  background-color: rgb(50, 50, 50);
+  color: var(--main-text-color);
+  background-color: var(--main-background-color);
+}
+
+header {
+  border: solid var(--title-color) 2px;
+  background-color: var(--title-color);
+}
+
+.main-title-bar {
+  font-size: 400%;
+  background-color: var(--title-color);
+  margin-left: 2%;
+}
+
+/* INSERT GRADIENT HERE */
+.main-navbar {
+  /* border: solid greenyellow 2px; */
+  display: flex;
+  justify-content: right;
+}
+
+.main-navbar div {
+  display: inline;
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 120%;
+  /* border-left: solid var(--title-color) 2px;
+  border-right: solid var(--title-color) 2px; */
+}
+
+.main-body section {
+  border: solid yellow 2px;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.section-title-holder {
+  display: flex;
+  border: solid red 1px;
+  border-right: solid var(--title-color) 2px;
+  margin: 0px 10px 0px 0px;
+  flex: 0 0 22%;
+  /* WHY DO THE MARGINS ALL LINE UP FINE WHEN I USE FLEX BUT NOT WHEN I USE WIDTH???? */
+  /* width: 22%;  */
+}
+.main-body section h2 {
+  display: flex;
+  border: dotted red 2px;
+  justify-self: center;
+  align-self: center;
+  font-size: 300%;
+}
+
+.main-body section div {
+  display: flex;
+  display: inline;
+}
+
+.main-body section div p {
+  display: flex;
+  font-size: 150%;
+}
+
+.main-body section h2,
+div {
+  display: flex;
+  display: inline;
+}
+
+.project-card-holder {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#top-card {
+  display: flex;
+  border: dotted yellowgreen 2px;
+  width: 80%;
+}
+
+.card {
+  border: dotted green 2px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 40%;
+}
+
+.card-description {
+  font-size: 150%; /*WHY IS THIS NOT WORKING???????*/
+}
+
+figure {
+  border: solid orange 1px;
 }
