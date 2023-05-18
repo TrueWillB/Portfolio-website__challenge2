@@ -5,6 +5,7 @@
   --main-text-color: white;
   --gradient-end-color: rgba(0, 0, 139, 0);
   --shadow-color: rgb(195, 60, 84);
+  --link-color: rgb(255, 188, 181);
 }
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -19,10 +20,38 @@ header {
   flex-wrap: wrap;
 }
 
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
 #my-avatar {
   display: inline;
   justify-self: right;
   width: 17%;
+}
+/* Frankly I need to find a better banner image that goes better with the other colors in the page */
+.welcome-banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("./images/banner-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#the-past {
+  align-self: flex-end;
+  background-color: transparent;
+  font-size: 100%;
+  padding: 0% 2%;
+}
+#the-future {
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 150%;
+  padding: 0% 2%;
 }
 
 .main-title-bar {
@@ -65,8 +94,6 @@ header {
     var(--title-color),
     var(--gradient-end-color)
   );
-  /* WHY DO THE MARGINS ALL LINE UP FINE WHEN I USE FLEX BUT NOT WHEN I USE WIDTH???? */
-  /* width: 22%;  */
 }
 .main-body section h2 {
   display: flex;
@@ -111,12 +138,36 @@ div {
   height: 300px;
 }
 
+#card-2 {
+  background-image: url("./images/study.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#card-3 {
+  background-image: url("./images/accessibility-site.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#card-4 {
+  background-image: url("./images/Placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#card-5 {
+  background-image: url("./images/Placeholder.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.section-content-holder a {
+  color: var(--link-color);
+}
 .card {
-  /* border: dotted var(--shadow-color) 2px; */
   box-shadow: 5px 5px 10px var(--shadow-color);
   margin: 1%;
   width: 23%;
-  /* width: 23%; */
   height: 300px;
 }
 
@@ -125,18 +176,12 @@ figure p {
 }
 
 figure {
-  /* background-image: linear-gradient(
-    to right,
-    var(--title-color),
-    var(--gradient-end-color)
-  ); */
   background-color: transparent;
   width: fit-content;
 }
 
 figure h3,
 figure p {
-  /* background-color: transparent; */
   background-image: linear-gradient(
     to right,
     var(--title-color),
@@ -144,6 +189,12 @@ figure p {
   );
   /* This creates a text shadow surrounding each letter to make card text visible against any picture background */
   text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media screen and (max-width: 999px) {
