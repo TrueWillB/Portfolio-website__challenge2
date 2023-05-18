@@ -11,16 +11,16 @@ This is a website that will display my portfolio, made for challenge 2 of my boo
 - All images (except for my beautiful face) were sourced from https://unsplash.com/
 - my code is a little sparse on comments. When it comes to HTML and CSS, I have trouble deciding what is relevant to the viewer of the code. After all, it seems almost self-explanatory at times. I have an easier time commenting when I've written code that actually transforms and performs operations, as it is necessary to let the code viewer know what they are looking at to make squashing any future bugs easier. I'm sure we'll learn good comment etiquette going forward
 
-![Full-size website](./assets/readme-assets/Full-size.png)
-
 ### The full size website
 
-![Between 768 and 999 pixels wide](./assets/readme-assets/lessThan1000px.png)
+![Full-size website](./assets/readme-assets/Full-size.png)
 
 ### Between 1000 and 768 pixels wide
 
-![less than 768 pixels wide](./assets/readme-assets/lessThan768px.png)
+![Between 768 and 999 pixels wide](./assets/readme-assets/lessThan1000px.png)
 
 ### less than 768 pixels wide
+
+![less than 768 pixels wide](./assets/readme-assets/lessThan768px.png)
 
 ## I hope you enjoy my website! It was a bit daunting to make, but also enjoyable!
