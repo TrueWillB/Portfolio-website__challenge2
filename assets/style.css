@@ -20,40 +20,6 @@ header {
   flex-wrap: wrap;
 }
 
-a {
-  background-color: transparent;
-  text-decoration: none;
-}
-
-#my-avatar {
-  display: inline;
-  justify-self: right;
-  width: 17%;
-}
-/* Frankly I need to find a better banner image that goes better with the other colors in the page */
-.welcome-banner {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background-image: url("./images/banner-photo.jpg");
-  background-size: cover;
-  background-position: center;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
-}
-
-#the-past {
-  align-self: flex-end;
-  background-color: transparent;
-  font-size: 100%;
-  padding: 0% 2%;
-}
-#the-future {
-  align-self: flex-start;
-  background-color: transparent;
-  font-size: 150%;
-  padding: 0% 2%;
-}
-
 .main-title-bar {
   font-size: 400%;
   background-color: var(--title-color);
@@ -79,13 +45,47 @@ a {
   font-size: 150%;
 }
 
+a {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+#my-avatar {
+  display: inline;
+  justify-self: right;
+  width: 17%;
+}
+/* Frankly I need to find a better banner image that goes better with the other colors in the page */
+.welcome-banner {
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-image: url("./images/banner-photo.jpg");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+#the-past {
+  align-self: flex-end;
+  background-color: transparent;
+  font-size: 100%;
+  padding: 0% 2%;
+}
+#the-future {
+  align-self: flex-start;
+  background-color: transparent;
+  font-size: 150%;
+  padding: 0% 2%;
+}
+
 .main-body section {
   display: flex;
   margin-bottom: 20px;
 }
 
 .section-title-holder {
-  display: flex;
   border-right: solid var(--title-color) 2px;
   margin: 0px 10px 0px 0px;
   flex: 0 0 22%;
@@ -216,7 +216,7 @@ footer {
     );
   }
   .main-navbar div {
-    font-size: 4vw;
+    font-size: 250%;
   }
 
   #my-avatar {
@@ -234,5 +234,8 @@ footer {
   .card {
     width: 98%;
     height: 200px;
+  }
+  .main-navbar {
+    font-size: 2vw;
   }
 }
