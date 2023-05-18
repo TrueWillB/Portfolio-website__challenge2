@@ -1,7 +1,10 @@
+/* I wanted to try and define as much as I could using variables so I could make quick changes later */
 :root {
   --main-background-color: rgb(50, 50, 50);
   --title-color: darkblue;
   --main-text-color: white;
+  --gradient-end-color: rgba(0, 0, 139, 0);
+  --shadow-color: rgb(195, 60, 84);
 }
 * {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -10,59 +13,75 @@
 }
 
 header {
-  border: solid var(--title-color) 2px;
+  border: solid var(--main-background-color) 2px;
   background-color: var(--title-color);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#my-avatar {
+  display: inline;
+  justify-self: right;
+  width: 17%;
 }
 
 .main-title-bar {
   font-size: 400%;
   background-color: var(--title-color);
+  width: 81%;
   margin-left: 2%;
 }
 
-/* INSERT GRADIENT HERE */
 .main-navbar {
-  /* border: solid greenyellow 2px; */
   display: flex;
-  justify-content: right;
+  justify-self: right;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    var(--title-color),
+    var(--main-background-color)
+  );
 }
 
 .main-navbar div {
+  background-color: transparent;
   display: inline;
   display: flex;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 120%;
-  /* border-left: solid var(--title-color) 2px;
-  border-right: solid var(--title-color) 2px; */
 }
 
 .main-body section {
-  border: solid yellow 2px;
   display: flex;
   margin-bottom: 20px;
 }
 
 .section-title-holder {
   display: flex;
-  border: solid red 1px;
   border-right: solid var(--title-color) 2px;
   margin: 0px 10px 0px 0px;
   flex: 0 0 22%;
+  background-image: linear-gradient(
+    to left,
+    var(--title-color),
+    var(--gradient-end-color)
+  );
   /* WHY DO THE MARGINS ALL LINE UP FINE WHEN I USE FLEX BUT NOT WHEN I USE WIDTH???? */
   /* width: 22%;  */
 }
 .main-body section h2 {
   display: flex;
-  border: dotted red 2px;
   justify-self: center;
   align-self: center;
   font-size: 300%;
+  background-color: transparent;
 }
 
 .main-body section div {
   display: flex;
   display: inline;
+  border-top: solid var(--title-color) 2px;
 }
 
 p {
@@ -80,24 +99,29 @@ div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
+}
+
+.section-content-holder {
+  width: 100%;
 }
 
 #top-card {
   display: flex;
-  border: dotted yellowgreen 2px;
-  width: 82%;
+  width: 100%;
   background-image: url("./images/lorem-photo.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .card {
-  border: dotted green 2px;
+  /* border: dotted var(--shadow-color) 2px; */
+  box-shadow: 5px 5px 10px var(--shadow-color);
   margin: 1%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 40%;
+  width: 20%;
   height: 200px;
 }
 
@@ -106,8 +130,12 @@ figure p {
 }
 
 figure {
-  border: solid orange 1px;
-  background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    var(--title-color),
+    var(--gradient-end-color)
+  );
+  /* background-color: transparent; */
 }
 
 figure h3,
